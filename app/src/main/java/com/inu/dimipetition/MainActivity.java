@@ -17,13 +17,18 @@ public class MainActivity extends AppCompatActivity {
         UtilClass.SetStatusBarColor(getWindow(), getApplicationContext(), R.color.colorPrimary);
 
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recycler_root);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(llm);
 
         recyclerAdapter = new PetitionListRecyclerAdapter(this);
         recyclerView.setAdapter(recyclerAdapter);
+        recyclerView.setHasFixedSize(true);
 
         recyclerAdapter.addItem("생활/기숙사","학생의 인권을 침해하는 야외점호 제도를 폐지해주세요",58956);
-        recyclerAdapter.addItem("생활/기숙사","학생들의 정당한 수면권 보장을 위해 취침시간을 늘려주세요",2543);
+        recyclerAdapter.addItem("생활/기숙사","학생들의 정당한",2543);
+        recyclerAdapter.addItem("생확/기숙사","학봉관에 와이파이를 설치하여 학생들의 여가를 보장해 주세요",45566);
+        recyclerAdapter.addItem("생활/기숙사","학생의 인권을 침해하는 야외점호 제도를 폐지해주세요",58956);
+        recyclerAdapter.addItem("생활/기숙사","학생들의 정당한",2543);
         recyclerAdapter.addItem("생확/기숙사","학봉관에 와이파이를 설치하여 학생들의 여가를 보장해 주세요",45566);
     }
 }

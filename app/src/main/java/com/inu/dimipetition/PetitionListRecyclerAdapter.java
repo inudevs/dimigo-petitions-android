@@ -27,7 +27,7 @@ public class PetitionListRecyclerAdapter extends RecyclerView.Adapter<PetitionLi
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_petition, null);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_petition, parent,false);
         return new ViewHolder(v);
     }
 
