@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">DImiPetition</string>
-    <string name="applicationName">DIMIPETITION</string>
-    <string name="cate_test">테스트용 분류</string>
-    <string name="title_test">준호는 정말 잘생겼어요 그리고 이 레이아웃은 밑으로도 늘어나지요</string>
+    <string name="name_application">DIMIPETITION</string>
+
+    <string name="test_category">테스트용 분류</string>
+    <string name="test_title">준호는 정말 잘생겼어요 그리고 이 레이아웃은 밑으로도 늘어나지요</string>
+    <string name="test_context">밤이 언덕 나는 불러 차 것은 하나에 가득 거외다. 어머님, 속의 이름과 어머니 위에도 어머님, 아이들의 한 나는 듯합니다. 하늘에는 흙으로 불러 이 써 쉬이 까닭입니다. 패, 한 가슴속에 아름다운 나는 별 잠, 있습니다. 별 사랑과 파란 못 이름자를 아무 언덕 남은 봅니다. 아침이 쉬이 하나에 시와 별 가을 이름과 강아지, 봅니다. 하나에 소녀들의 우는 버리었습니다. 이름을 겨울이 밤을 남은 내 위에 불러 별들을 계십니다. 비둘기, 강아지, 된 없이 패, 언덕 버리었습니다.</string>
+
+    <string name="description_search">검색하는 버튼</string>
 </resources>

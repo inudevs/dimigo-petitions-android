@@ -55,7 +55,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="36dp"
                     android:src="@drawable/ic_search_24dp"
-                    android:background="@color/colorTransparent"/>
+                    android:background="@color/colorTransparent"
+                    android:contentDescription="@string/description_search" />
 
             </RelativeLayout>
 
