@@ -118,30 +118,36 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="청원내용"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="28dp"
-                    android:textStyle="bold"/>
+                    android:orientation="vertical">
 
-                <View
-                    android:layout_width="108dp"
-                    android:layout_height="5dp"
-                    android:background="@color/colorPrimary"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="청원내용"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="12dp"
                     android:text="@string/test_context"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="22sp"/>
+                    android:textSize="18sp"/>
 
             </LinearLayout>
-
-            <include layout="@layout/layout_comment"></include>
 
         </LinearLayout>
 

@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        card_view:cardCornerRadius="8dp">
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="1dp">
 
         <LinearLayout
             android:id="@+id/layout_root"
