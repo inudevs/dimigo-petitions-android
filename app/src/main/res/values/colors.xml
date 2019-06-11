@@ -6,4 +6,5 @@
     <color name="colorPrimaryText">#2B2B2B</color>
     <color name="colorPrimaryLightText">#585858</color>
     <color name="colorTransparent">#00000000</color>
+    <color name="colorDarkTransparent">#57000000</color>
 </resources>

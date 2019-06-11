@@ -1,8 +1,10 @@
 package com.inu.dimipetition;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.CardView;
@@ -19,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@SuppressWarnings("WeakerAccess")
 public class PetitionListRecyclerAdapter extends RecyclerView.Adapter<PetitionListRecyclerAdapter.ViewHolder> {
     private Context context;
     private ArrayList<PetitionItem> items = new ArrayList<PetitionItem>();
@@ -32,18 +35,19 @@ public class PetitionListRecyclerAdapter extends RecyclerView.Adapter<PetitionLi
         this.context = context;
     }
 
+    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_petition, parent,false);
         return new ViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(final ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         final PetitionItem item = items.get(position);
         holder.category.setText(item.getCategory());
         holder.title.setText(item.getTitle());
-        holder.participant.setText(item.getParticipant().toString());
+        holder.participant.setText(String.valueOf(item.getParticipant()));
         holder.cardview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

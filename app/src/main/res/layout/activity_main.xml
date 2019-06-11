@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,12 +29,13 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="36dp"
-                    android:gravity="center">
+                    android:gravity="center"
+                    tools:ignore="RelativeOverlap">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="추천순 청원"
+                        android:text="@string/menu_current"
                         android:textColor="@color/colorPrimaryText"
                         android:textSize="28sp"
                         android:textStyle="bold"/>
@@ -42,7 +44,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:text="완료된 청원"
+                        android:text="@string/menu_solved"
                         android:textColor="@color/colorPrimaryLightText"
                         android:textSize="20sp" />
 
