@@ -1,18 +1,14 @@
 package com.inu.dimipetition;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import java.util.Objects;
 
 public class PetitionActivity extends AppCompatActivity {
     Context context;
@@ -46,7 +42,7 @@ public class PetitionActivity extends AppCompatActivity {
 
         category.setText(petitionItem.getCategory());
         title.setText(petitionItem.getTitle());
-        participant.setText(petitionItem.getParticipant().toString());
+        participant.setText(String.valueOf(petitionItem.getParticipant()));
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

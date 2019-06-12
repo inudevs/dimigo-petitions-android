@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">학생부탁</string>
+    <string name="description_back">뒤로가는 단추</string>
+    <string name="description_search">찾는 단추</string>
+    <string name="description_share">나눔 단추</string>
+    <string name="menu_current">유명한순</string>
+    <string name="menu_solved">해결된것</string>
+    <string name="name_application">학생부탁</string>
+    <string name="test_category">실험분류</string>
+    <string name="test_title">려준호 학생은 매우 잘생겼답디다. 그리고 이 지명배정은 아래로도 내려가지요.</string>
+    <string name="test_number">652</string>
+    <string name="text_content">부탁하는 글</string>
+    <string name="test_context">려준호 학생의 온존한 생활을 위하여, 우리 동무들을 결단코 물러서디아느릴것입니다. 불쌍하고 애탄한 우리 려준호 동무는 지난 유월 사일 남조선 괴뢰의 손에 끔하게 살해 당한뒤, 남조선 정부는 어떠한 립장도 취하고 있지 아니합네다. 친애하는 동무들이요, 우리는 려준호 동무를 위하여 힘을 모아야합네다.</string>
+</resources>

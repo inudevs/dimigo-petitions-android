@@ -2,10 +2,11 @@ package com.inu.dimipetition;
 
 import java.io.Serializable;
 
+@SuppressWarnings("WeakerAccess")
 public class PetitionItem implements Serializable {
-    String category;
-    String title;
-    Integer participant;
+    private String category;
+    private String title;
+    private Integer participant;
 
     PetitionItem(String category, String title, Integer participant) {
         this.category = category;
