@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@color/colorDarkTransparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="22dp"
+            android:text="공유하기"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="18dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/componet_button"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/componet_button"
+                    android:src="@drawable/ic_twitter" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/ic_messenger" />
+
+                <de.hdodenhof.circl7eimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/kakao_logo"
+                    app:civ_border_color="#FF000000"/>
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/ic_messenger" />
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:text="취소"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

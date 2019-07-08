@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class PetitionActivity extends AppCompatActivity {
     Context context;
 
+    ShareDialog shareDialog;
     PetitionItem petitionItem;
 
     TextView category;
@@ -22,6 +23,7 @@ public class PetitionActivity extends AppCompatActivity {
     LinearLayout root;
 
     ImageButton back;
+    ImageButton share;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class PetitionActivity extends AppCompatActivity {
 
         context = this;
 
+        shareDialog = new ShareDialog(this);
         petitionItem = (PetitionItem) getIntent().getSerializableExtra("data");
 
         category = (TextView) findViewById(R.id.text_category);
@@ -39,6 +42,7 @@ public class PetitionActivity extends AppCompatActivity {
         root = (LinearLayout) findViewById(R.id.layout_root);
 
         back = (ImageButton) findViewById(R.id.imgbtn_back);
+        share = (ImageButton) findViewById(R.id.imgbtn_share);
 
         category.setText(petitionItem.getCategory());
         title.setText(petitionItem.getTitle());
@@ -48,6 +52,12 @@ public class PetitionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finishAfterTransition();
+            }
+        });
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shareDialog.show();
             }
         });
     }
