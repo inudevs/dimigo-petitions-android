@@ -17,8 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // 스테이터스바 컬러 변경
         UtilClass.SetStatusBarColor(getWindow(), getApplicationContext(), R.color.colorPrimaryDark);
 
+        // 처음 실행 로그인 화면 표시
         SharedPreferences pref = getSharedPreferences("isFirst", Activity.MODE_PRIVATE);
         boolean first = pref.getBoolean("isFirst", false);
         if(!first){

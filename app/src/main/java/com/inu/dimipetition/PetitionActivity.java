@@ -19,6 +19,7 @@ public class PetitionActivity extends AppCompatActivity {
     TextView category;
     TextView title;
     TextView participant;
+    TextView participant2;
 
     LinearLayout root;
 
@@ -32,12 +33,13 @@ public class PetitionActivity extends AppCompatActivity {
 
         context = this;
 
-        shareDialog = new ShareDialog(this);
+        shareDialog = new ShareDialog(this, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
         petitionItem = (PetitionItem) getIntent().getSerializableExtra("data");
 
         category = (TextView) findViewById(R.id.text_category);
         title = (TextView) findViewById(R.id.text_title);
         participant = (TextView) findViewById(R.id.text_participant);
+        participant2 = (TextView) findViewById(R.id.text_participant2);
 
         root = (LinearLayout) findViewById(R.id.layout_root);
 
@@ -47,6 +49,7 @@ public class PetitionActivity extends AppCompatActivity {
         category.setText(petitionItem.getCategory());
         title.setText(petitionItem.getTitle());
         participant.setText(String.valueOf(petitionItem.getParticipant()));
+        participant2.setText(String.valueOf(petitionItem.getParticipant()));
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

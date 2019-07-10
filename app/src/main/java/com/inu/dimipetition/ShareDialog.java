@@ -6,14 +6,22 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.button.MaterialButton;
 import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class ShareDialog extends Dialog {
     Context context;
 
-    MaterialButton cancel;
+    Button cancel;
+    LinearLayout cancelPanel;
 
     public ShareDialog(@NonNull Context context) {
         super(context);
+        this.context = context;
+    }
+
+    public ShareDialog(@NonNull Context context, int theme) {
+        super(context, theme);
         this.context = context;
     }
 
@@ -22,9 +30,17 @@ public class ShareDialog extends Dialog {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_share);
 
-        cancel = (MaterialButton) findViewById(R.id.btn_cancel);
+        cancel = (Button) findViewById(R.id.btn_cancel);
+        cancelPanel = (LinearLayout) findViewById(R.id.btn_cancelpanel);
+
 
         cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cancel();
+            }
+        });
+        cancelPanel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 cancel();
