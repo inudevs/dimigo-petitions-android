@@ -1,0 +1,11 @@
+<application>
+  <component name="MaterialThemeConfig">
+    <option name="isWizardShown" value="true" />
+    <option name="pristineConfig" value="false" />
+    <option name="useMaterialIcons" value="false" />
+    <option name="settingsSelectedTab" value="2" />
+    <option name="selectedTheme" value="DRACULA" />
+    <option name="userId" value="-741f78a2:16c04d100c5:-8000" />
+    <option name="version" value="3.5.0.1" />
+  </component>
+</application>
