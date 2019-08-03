@@ -3,4 +3,7 @@
     <option name="FONT_SIZE" value="16" />
     <option name="FONT_FAMILY" value="Consolas" />
   </component>
+  <component name="EditorSettings">
+    <option name="USE_SOFT_WRAPS" value="CONSOLE" />
+  </component>
 </application>
